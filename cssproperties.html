@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #main{
+            margin: 0;
+            text-align: center;
+            color: red;
+            cursor: pointer;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" onmouseenter="modify()" onmouseleave="unmodify()">
+        Welcome To Web Development !!
+    </div>
+</body>
+<script typr="text/javascript">
+function modify(){
+    document.getElementById("main").style.fontSize="2rem";
+    document.getElementById("main").style.color="Blue";
+}
+function unmodify()
+{
+    document.getElementById("main").style.fontSize="1.2rem";
+    document.getElementById("main").style.color="red";
+}
+</script>
+</html>

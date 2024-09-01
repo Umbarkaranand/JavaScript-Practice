@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <button id="stop" onclick="uncount()">Stop</button>
+</body>
+<script type="text/javascript">
+    
+    var my = setInterval(count,1000);
+    var count=0;
+    function count()
+    {
+        document.getElementsByTagName("h1")[0].innerHTML=count;
+        count++;
+    }
+    function uncount()
+    {
+        clearInterval(my);
+    }
+</script>
+</html>

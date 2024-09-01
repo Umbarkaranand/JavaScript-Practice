@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Please Enter Mobile Number</h3>
+    <input type="text" name="" id="input" onkeyup="val(this)">
+    <div id="res"></div>
+    
+</body>
+<script type="text/javascript">
+
+document.getElementById("res").style.color="red";
+    function val(elem)
+    {
+       if(isNaN(elem.value))
+       {
+        alert("Enter Only Number ");
+        elem.value=" ";
+       }
+       else{
+        if(elem.value.length > 10)
+        {
+            document.getElementById("res").innerHTML="<h4>Please Enter Only 10 Numbers </h4>"
+            elem.value=" ";
+        }
+        
+       }
+
+       
+    }
+
+</script>
+</html>
